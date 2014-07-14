@@ -52,7 +52,7 @@ namespace Calculator
                 default:
                     break;
             }
-            return String.Format("{0} {1} {2} = {3}", FirstOperand, operation, SecondOperand, Math.Round(Result, Accuracy));
+            return String.Format("{0} {1} {2} = {3}{4}", FirstOperand, operation, SecondOperand, Math.Round(Result, Accuracy), Environment.NewLine);
         }
 
         public double GetResult(double firstOperand, double secondOperand, Operation operation)
