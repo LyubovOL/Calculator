@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47EA8FCD-EC7E-45D4-9829-B86900FE2CC6}</ProjectGuid>
+    <ProjectGuid>{15BD6DCD-3D08-4EDA-BD2E-23195E2E612C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Storage</RootNamespace>
-    <AssemblyName>Storage</AssemblyName>
+    <RootNamespace>Logic</RootNamespace>
+    <AssemblyName>Logic</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,14 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculatorLogic.cs" />
+    <Compile Include="IStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StoreInFile.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Logic\Logic.csproj">
-      <Project>{15bd6dcd-3d08-4eda-bd2e-23195e2e612c}</Project>
-      <Name>Logic</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

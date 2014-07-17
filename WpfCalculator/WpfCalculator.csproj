@@ -102,9 +102,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calculator\Calculator.csproj">
-      <Project>{0c31e753-aef5-403c-97a6-c0ba0a76428a}</Project>
-      <Name>Calculator</Name>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{15bd6dcd-3d08-4eda-bd2e-23195e2e612c}</Project>
+      <Name>Logic</Name>
     </ProjectReference>
     <ProjectReference Include="..\Storage\Storage.csproj">
       <Project>{47ea8fcd-ec7e-45d4-9829-b86900fe2cc6}</Project>

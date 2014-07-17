@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{0C31E753-AEF5-403C-97A6-C0BA0A76428A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForCalculator", "..\TestForCalculator\TestForCalculator\TestForCalculator.csproj", "{5D81509F-6CC4-49AB-A4AC-30D40FE49E66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCalculator", "WpfCalculator\WpfCalculator.csproj", "{713388D5-B0E6-4E9B-9EF7-399A63A43473}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Storage\Storage.csproj", "{47EA8FCD-EC7E-45D4-9829-B86900FE2CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{15BD6DCD-3D08-4EDA-BD2E-23195E2E612C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C31E753-AEF5-403C-97A6-C0BA0A76428A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C31E753-AEF5-403C-97A6-C0BA0A76428A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C31E753-AEF5-403C-97A6-C0BA0A76428A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C31E753-AEF5-403C-97A6-C0BA0A76428A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5D81509F-6CC4-49AB-A4AC-30D40FE49E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5D81509F-6CC4-49AB-A4AC-30D40FE49E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D81509F-6CC4-49AB-A4AC-30D40FE49E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{47EA8FCD-EC7E-45D4-9829-B86900FE2CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47EA8FCD-EC7E-45D4-9829-B86900FE2CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47EA8FCD-EC7E-45D4-9829-B86900FE2CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BD6DCD-3D08-4EDA-BD2E-23195E2E612C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BD6DCD-3D08-4EDA-BD2E-23195E2E612C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BD6DCD-3D08-4EDA-BD2E-23195E2E612C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BD6DCD-3D08-4EDA-BD2E-23195E2E612C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

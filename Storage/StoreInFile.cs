@@ -4,23 +4,31 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Logic;
 
 namespace Storage
 {
     public class StoreInFile : IStorage
     {
+        public string Path { get; set; }
 
-        public void Write(string operation, string path)
+        public StoreInFile(string path)
         {
-            File.AppendAllText(path, operation);
+            Path = path;
+        }
+        public void Write(string operation)
+        {
+            File.AppendAllText(Path, operation);
         }
 
-        public string[] Read(string path, int countString)
+        public string[] Read(int countString)
         {
-            var historyOfOperation = new string[countString];
-            historyOfOperation = File.ReadLines(path).Reverse().Take(countString).Reverse().ToArray();
-            if (historyOfOperation.Length == 0)
+            if (!File.Exists(Path))
+            {
                 return null;
+            }
+            var historyOfOperation = new string[countString];
+            historyOfOperation = File.ReadLines(Path).Reverse().Take(countString).Reverse().ToArray();
             return historyOfOperation;
         }
     }

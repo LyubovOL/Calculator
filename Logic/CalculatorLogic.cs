@@ -1,15 +1,29 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Logic
 {
-    public class Calculator
+    public class CalculatorLogic
     {
-        public Calculator(double firstOperand, double secondOperand, Operation operation, int accuracy)
+        public double FirstOperand { get; set; }
+        public double SecondOperand { get; set; }
+        public double Result { get; set; } 
+        public int Accuracy { get; set; }
+        public Operation TypeOperation { get; set; }
+
+        public enum Operation 
+        {
+            Addition = 1,
+            Subtraction = 2,
+            Multiplication = 3,
+            Division = 4,
+            Equally = 5
+        }
+
+        public CalculatorLogic(double firstOperand, double secondOperand, Operation operation, int accuracy)
         {
             FirstOperand = firstOperand;
             SecondOperand = secondOperand;
@@ -17,12 +31,6 @@ namespace Calculator
             Accuracy = accuracy;
             Result = GetResult(FirstOperand, SecondOperand, TypeOperation);
         }
-
-        public double FirstOperand { get; set; }
-        public double SecondOperand { get; set; }
-        public double Result { get; set; }
-        public int Accuracy { get; set; }
-        public Operation TypeOperation { get; set; }
 
         public override string ToString()
         {
@@ -70,4 +78,4 @@ namespace Calculator
             return result;
         }
     }
-} 
+}
